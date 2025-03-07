@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PikaPort | How It Works</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1 class="logo">PikaPort</h1>
+    <div class="nav-container">
+      <div class="logo">PikaPort</div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -20,52 +21,60 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
     </div>
   </header>
 
-  <section class="how-hero">
-    <div class="how-content container">
-      <h2>How It Works</h2>
-      <p>Simplified parcel delivery at your fingertips—whether you’re sending or delivering.</p>
+  <section class="page-hero how-hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>How It Works</h1>
+        <p>Seamlessly book, track, and deliver your parcels with our user-friendly platform.</p>
+      </div>
     </div>
   </section>
 
   <section class="process container">
-    <div class="step">
-      <h3>1. Sign Up</h3>
-      <p>
-        Create an account as a customer or register as an “Eagle” driver. Our seamless registration process gets you started in minutes.
-      </p>
-      <img src="https://source.unsplash.com/random/300x200?signup" alt="Sign Up" />
+    <div class="process-step">
+      <i class="fa-solid fa-user-plus step-icon"></i>
+      <h3>Sign Up</h3>
+      <p>Create your account as a customer or register as an “Eagle” driver within minutes.</p>
     </div>
-    <div class="step">
-      <h3>2. Book or Accept Deliveries</h3>
-      <p>
-        Customers can schedule pickups and deliveries, while our freelance drivers receive delivery notifications on the go.
-      </p>
-      <img src="https://source.unsplash.com/random/300x200?delivery-service" alt="Book or Accept Deliveries" />
+    <div class="process-step">
+      <i class="fa-solid fa-phone step-icon"></i>
+      <h3>Book or Accept Deliveries</h3>
+      <p>Customers book deliveries while drivers receive real-time notifications to accept the job.</p>
     </div>
-    <div class="step">
-      <h3>3. Real-Time Tracking</h3>
-      <p>
-        Follow your parcel’s journey live through our app. Enjoy transparency and peace of mind from pickup to drop-off.
-      </p>
-      <img src="https://source.unsplash.com/random/300x200?map" alt="Real-Time Tracking" />
+    <div class="process-step">
+      <i class="fa-solid fa-location-arrow step-icon"></i>
+      <h3>Real-Time Tracking</h3>
+      <p>Follow your parcel live—from pickup to delivery—for complete transparency.</p>
     </div>
-    <div class="step">
-      <h3>4. Delivery & Feedback</h3>
-      <p>
-        Once delivered, rate your experience and help us continually refine our service. We value your trust and feedback.
-      </p>
-      <img src="https://source.unsplash.com/random/300x200?feedback" alt="Feedback" />
+    <div class="process-step">
+      <i class="fa-solid fa-thumbs-up step-icon"></i>
+      <h3>Delivery &amp; Feedback</h3>
+      <p>Receive your parcel and share your feedback to help us improve our service.</p>
     </div>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2024 PikaPort TECHNOLOGIES LLP. All rights reserved.</p>
-      <p>Contact: <a href="mailto:jasleen.kaur@pikaport.com">jasleen.kaur@pikaport.com</a></p>
+    <div class="footer-container container">
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <p>&copy; 2024 PikaPort Technologies LLP. All rights reserved.</p>
+      <p>Email: <a href="mailto:jasleen.kaur@pikaport.com">jasleen.kaur@pikaport.com</a></p>
     </div>
   </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav ul');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
