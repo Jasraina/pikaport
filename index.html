@@ -4,13 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PikaPort | Home</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1 class="logo">PikaPort</h1>
+    <div class="nav-container">
+      <div class="logo">PikaPort</div>
       <nav>
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -20,30 +23,51 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
     </div>
   </header>
 
   <section class="hero">
-    <div class="hero-content">
-      <h2>Revolutionizing Parcel Delivery</h2>
-      <p>Fast, reliable, and eco-friendly parcel delivery at the speed of your journey.</p>
-      <a href="services.html" class="btn">Discover Our Services</a>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Revolutionizing Parcel Delivery</h1>
+        <p>Fast, reliable & eco-friendly logistics—delivering your parcels at the speed of your journey.</p>
+        <a href="services.html" class="btn">Discover Our Services</a>
+      </div>
     </div>
   </section>
 
   <section class="intro container">
-    <h2>Welcome to PikaPort</h2>
-    <p>
-      At PikaPort, we connect people on the move—empowering everyday travelers to deliver parcels quickly and efficiently. Our platform harnesses technology to transform traditional logistics, offering a flexible, cost-effective solution for both senders and drivers.
-    </p>
-    <img src="https://source.unsplash.com/random/800x400?delivery" alt="Parcel Delivery" />
+    <div class="intro-text">
+      <h2>Welcome to PikaPort</h2>
+      <p>
+        At PikaPort, we connect people on the move by empowering everyday travelers to deliver parcels quickly and efficiently. Our smart platform redefines traditional logistics, offering a flexible and cost-effective solution for senders and drivers alike.
+      </p>
+    </div>
+    <div class="intro-img">
+      <img src="https://source.unsplash.com/800x600/?delivery,logistics" alt="Parcel Delivery" />
+    </div>
   </section>
 
   <footer>
-    <div class="container">
+    <div class="footer-container container">
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
       <p>&copy; 2024 PikaPort TECHNOLOGIES LLP. All rights reserved.</p>
-      <p>Contact: <a href="mailto:jasleen.kaur@pikaport.com">jasleen.kaur@pikaport.com</a></p>
+      <p>Email: <a href="mailto:jasleen.kaur@pikaport.com">jasleen.kaur@pikaport.com</a></p>
     </div>
   </footer>
+
+  <script>
+    // Responsive menu toggle
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav ul');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
